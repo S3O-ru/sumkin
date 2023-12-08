@@ -1,0 +1,128 @@
+@media (max-width: 1150px) {
+    .header-bottom {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .header-left .contacts {
+        flex-direction: row;
+    }
+    .we-do-title {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .we-do-items {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .about .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .about-item:nth-last-child(2)::after {
+        display: none;
+    }
+    .footer .box {
+        flex-direction: column;
+    }
+    .inner-left {
+        padding: 54px 0 0;
+        flex-direction: column;
+    }
+}
+@media (max-width: 770px) {
+    .logo {
+        width: 550px;
+        /* height: 112px; */
+    }
+    .header-center {
+        padding-top: 100px;
+    }
+    .header-bottom {
+        font-size: 16px;
+    }
+    .categories .box {
+        width: 1435px;
+        justify-content: flex-start;
+    }
+    .about-item {
+        min-height: 0;
+}
+    .about-item::after {
+        display: none;
+    }
+    .inner-right {
+        font-size: 16px;
+    }
+}
+@media (max-width: 570px) {
+    .contains {
+        padding: 0 16px;
+    }
+    header {
+        background-image: url(../img/header-mob.png);
+    }
+    .header-center {
+        padding-top: 66px;
+        gap: 16px;
+    }
+    .logo {
+        width: 162px;
+        height: 30px;
+    }
+    .header-title {
+        max-width: 260px;
+    }
+    .header-title h1 {
+        font-size: 18px;
+    }
+    .header-bottom {
+        gap: 41px;
+        padding-bottom: 54px;
+    }
+    .header-left {
+        padding-top: 33px;
+    }
+    .header-left .contacts {
+        flex-direction: column;
+        gap: 17px;
+    }
+    .we-do-items {
+        flex-direction: column;
+        gap: 14px;
+        padding-left: 53px;
+    }
+    .category-item {
+        width: 276px;
+    }
+    .inner-left {
+        padding: 32px 0 0;
+        gap: 16px;
+    }
+    .inner-right {
+        padding: 49px 0 97px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+@media (max-width: 390px) {
+    .header-bottom {
+        align-items: flex-start;
+    }
+    .we-do-title {
+        text-align: left; 
+    }
+    .we-do-items {
+        padding-left: 0;
+    }
+    .categories .box {
+        gap: 14px;
+    }
+    .catalog-pic img {
+        width: 328px;
+    }
+    .footer .box {
+        align-items: flex-start;
+    }
+}
