@@ -26,7 +26,7 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 9.17%;
+    padding: 0 8%;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 83px;
+    padding-bottom: 87px;
     font-size: 18px;
 }
 .header-left {
@@ -111,7 +111,7 @@ header {
 .we-do-title {
     font-size: 20px;
     max-width: 283px;
-    margin-top: -25px;
+    margin-top: -27px;
 }
 .we-do-items {
     display: flex;
@@ -407,4 +407,58 @@ footer {
 }
 .footer-contact {
     color: white;
+}
+
+/* -----inner page -----*/
+
+.header-inner-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 208px;
+    gap: 20px;
+}
+.header-inner-title {
+    max-width: 530px;
+    padding-bottom: 112px;
+}
+.header-inner-title h1 {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+}
+.inner-header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 88px;
+    font-size: 18px;
+}
+.header-top {
+    padding-top: 40px;
+}
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+} 
+.breadcrumbs .text {
+    font-size: 18px;
+    font-weight: 600;
+}
+.breadcrumbs-link {
+    color: white;
+}
+.arrow {
+    width: 24px;
+    height: 24px;
+}
+.arrow-pic {
+    background-image: url(../svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
 }
