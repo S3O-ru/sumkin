@@ -34,7 +34,25 @@
         flex-direction: column;
         gap: 50px;
     }
+    /* ----modal---- */
 
+    .modal {
+        max-width: 504px;
+        top: -1000px;
+        margin: auto;
+    }
+    .modal-box {
+        flex-direction: column;
+    }
+    .modal-right-close {
+        width: 24px;
+        height: 24px;
+        top: 10px;
+        left: 20px;
+    }
+    .close-svg {
+        background-image: url(../svg/close-mob.svg);
+    }
 }
 @media (max-width: 770px) {
     .logo {
@@ -157,5 +175,70 @@
     .inner-header-bottom {
         align-items: flex-start;
     }
+    /* ----modal---- */
 
+    .modal {
+        max-width: 360px;
+    }
+    .modal-box {
+        padding: 84px 16px 28px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .modal-left {
+        gap: 12px;
+    }
+    .modal-left-prev,
+    .modal-box-prev-left {
+        gap: 7px;
+    }
+    .modal-left-prev {
+        width: 328px;
+    }
+    .modal-box-prev-left {
+        flex-grow: 2;
+    }
+    .modal-left-pic {
+        width: 328px;
+        height: 262px;
+    }
+    .modal-left-pic img {
+        width: 100%;
+        height: auto;
+    }
+    .prev-item {
+        width: 87px;
+        height: 70px;
+    }
+    .prev-more {
+        padding: 19px 7px;
+    }
+    .modal-right {
+        gap: 24px;
+    }
+    .modal-right-title {
+        max-width: 328px;
+        font-size: 18px;
+    }
+    .modal-right-price {
+        font-size: 24px;
+    }
+    .modal-right-description {
+        max-width: 328px;
+    }
+    .modal-right-nanesenie {
+        padding-top: 17px;
+    }
+    .modal-right-buttom {
+        padding: 16px 122px;
+    }
+    .modal-right-close {
+        width: 24px;
+        height: 24px;
+        top: 36px;
+        left: 20px;
+    }
+    .close-svg {
+        background-image: url(../svg/close-mob.svg);
+    }
 }

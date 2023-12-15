@@ -82,7 +82,7 @@
         <div class="contains">
             <div class="box">
                 <div class="catalog-item">
-                    <a href="#" class="catalog-link">
+                    <a href="#" class="catalog-link" onclick="openModal()">
                         <div class="catalog-pic">
                             <img src="./img/catilog-item.png" alt="pic">
                         </div>
@@ -238,5 +238,80 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="modal-box">
+                    <div class="modal-right-close" onclick="closeModal()">
+                        <div class="close-svg"></div>
+                    </div>
+            <div class="modal-left">
+                <div class="modal-left-pic">
+                    <img src="./img/modal-pic.png" alt="pic">
+                </div>
+                <div class="modal-left-prev">
+                    <div class="modal-box-prev-left">
+                        <div class="prev-item active">
+                            <img src="./img/modal-pic-prev.png" alt="pic">
+                        </div>
+                        <div class="prev-item">
+                            <img src="./img/modal-pic-prev.png" alt="pic">
+                        </div>
+                        <div class="prev-item">
+                            <img src="./img/modal-pic-prev.png" alt="pic">
+                        </div>
+                    </div>
+                    <div class="modal-box-prev-right">
+                        <div class="prev-more">
+                            <div class="arrow-modal">
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <div class="modal-right-top">
+                    <div class="modal-right-title">
+                        Папка для документов "Барселона" вторая строка для названия
+                    </div>
+                    <div class="modal-right-price">6 800 ₽</div>
+                    <div class="params">
+                        <div class="param">
+                            <div class="param-item">Цвет материала:</div>
+                            <div class="param-item">Коричневый</div>
+                        </div>
+                        <div class="param">
+                            <div class="param-item">Еще пункт:</div>
+                            <div class="param-item">Коричневый</div>
+                        </div>
+                        <div class="param">
+                            <div class="param-item">Еще пункт:</div>
+                            <div class="param-item">Коричневый</div>
+                        </div>
+                    </div>
+                    <div class="modal-right-description">
+                        Описание товара, Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию случайного текста
+                    </div>
+                    <div class="modal-right-nanesenie">
+                        <div class="nanesenie-text">Нанесение</div>
+                        <div class="nanesenie-checkbox">
+                            <input class="checkbox" type="checkbox" id="nanesenie" name="nanesenie" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-right-bottom">
+                    <button class="modal-right-buttom">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+ <script>
+     function openModal() {
+        document.getElementById("modal").style.top = "20%";
+        }
+     function closeModal() {
+        document.getElementById("modal").style.top = "-8000px";
+        }
+ </script>
 </body>
 </html>
