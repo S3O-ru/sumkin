@@ -299,18 +299,77 @@
                     </div>
                 </div>
                 <div class="modal-right-bottom">
-                    <button class="modal-right-buttom">Заказать</button>
+                    <button class="modal-right-buttom" onclick="openFeedback()">Заказать</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal-overlay"></div>
+
+    <div class="modal-feedback" id="modal-feedback">
+        <div class="modal-feedback-box">
+            <div class="modal-feedback-header">
+                <div class="modal-feedback-header-title">
+                    Ваши контакты
+                </div>
+                <div class="modal-feedback-close" onclick="closeFeedback()">
+                    <div class="close-svg"></div>
+                </div>
+            </div>
+            <div class="modal-feedback-body">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="tel" name="name" placeholder="Ваш телефон">
+                <textarea name="comment" placeholder="Детали заказа"></textarea>
+                <label class="input-file">
+                    <input type="file" name="file" placeholder="Загрузить файл">
+                    <span>+ Загрузить файл</span>
+                </label>
+                
+            </div>
+            <div class="modal-feedback-footer">
+                <button type="submit" class="modal-feedback-buttom" onclick="openSuccess()">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-feedback-overlay"></div>
+
+    <div class="modal-feedback-success" id="modal-feedback-success">
+        <div class="modal-feedback-box success">
+            <div class="modal-feedback-header">
+                
+                <div class="modal-feedback-close" onclick="closeSuccess()">
+                    <div class="close-svg"></div>
+                </div>
+            </div>
+            <div class="modal-feedback-body success">
+                <div class="success-text">
+                    Ваш заказ получен, мы скоро вам позвоним.
+                </div>
+            </div>
+            <div class="modal-feedback-footer">
+                <button type="submit" class="modal-feedback-buttom">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-feedback-overlay-success"></div>
  <script>
      function openModal() {
         document.getElementById("modal").style.top = "20%";
         }
      function closeModal() {
         document.getElementById("modal").style.top = "-8000px";
+        }
+    function openFeedback() {
+        document.getElementById("modal-feedback").style.top = "20%";
+        }
+    function closeFeedback() {
+        document.getElementById("modal-feedback").style.top = "-8000px";
+        }
+    function openSuccess() {
+        document.getElementById("modal-feedback-success").style.top = "20%";
+        }
+    function closeSuccess() {
+        document.getElementById("modal-feedback-success").style.top = "-8000px";
         }
  </script>
 </body>

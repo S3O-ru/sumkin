@@ -241,4 +241,54 @@
     .close-svg {
         background-image: url(../svg/close-mob.svg);
     }
+    /* ----modal-feedback---- */
+
+    .modal-feedback,
+    .modal-feedback-success {
+        max-width: 360px;
+    }
+    .modal-feedback-box {
+        padding: 38px 20px 28px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .modal-feedback-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .modal-feedback-body.success {
+        padding: 150px 16px;
+    }
+    .success-text {
+        width: 287px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .modal-feedback-body input {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 16px 20px;
+    }
+    .modal-feedback-body textarea {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 16px 184px 83px 20px;
+    }
+    .modal-feedback-footer {
+        padding-top: 143px;
+    }
+    .modal-feedback-close {
+        position: initial;
+        width: 24px;
+        height: 24px;
+    }
+    .close-svg {
+        background-image: url(../svg/close-mob.svg);
+    }
 }
